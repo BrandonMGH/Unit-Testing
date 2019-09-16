@@ -1,10 +1,14 @@
 const expect = require("chai").expect;
-const additionFunc = require("../MochaUnitTestingPractice");
+const ElementaryFuncOne = require("../MochaUnitTestingPractice");
 
+console.log(ElementaryFuncOne)
 
 describe("Multiply", function() {
   it("should add properly when passed numbers", function() {
-    expect(additionFunc(2, 4)).to.equal(6);
+    expect(ElementaryFuncOne.additionFunc()).to.equal(8);
+  });
+  it("should subtract properly when passed numbers", function() {
+    expect(ElementaryFuncOne.subtractionFunc()).to.equal(2);
   });
 
 });

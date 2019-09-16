@@ -1,7 +1,21 @@
-let additionFunc = (x,y) => {
-    return x + y 
+
+
+class ElementaryFunctions {
+    constructor(x, y){
+        this.x = x
+        this.y = y
+        
+    }
+    additionFunc () {
+        return this.x + this.y
+    }
+    subtractionFunc () {
+        return this.x - this.y
+    }
 }
 
-console.log(additionFunc(2,5))
+const ElementaryFuncOne = new ElementaryFunctions(5,3)
 
-module.exports = additionFunc;
+console.log(ElementaryFuncOne.additionFunc())
+
+module.exports = ElementaryFuncOne
