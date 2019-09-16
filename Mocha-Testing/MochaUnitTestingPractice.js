@@ -12,9 +12,15 @@ class ElementaryFunctions {
     subtractionFunc () {
         return this.x - this.y
     }
+    multipleFunc () {
+        return this.x * this.y
+    }
+    divideFunc () {
+        return this.x/this.y
+    }
 }
 
-const ElementaryFuncOne = new ElementaryFunctions(5,3)
+const ElementaryFuncOne = new ElementaryFunctions(6,3)
 
 console.log(ElementaryFuncOne.additionFunc())
 
